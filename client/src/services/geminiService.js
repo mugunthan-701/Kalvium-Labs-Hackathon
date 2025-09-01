@@ -229,7 +229,7 @@ export async function getLegalGuidance(question) {
     
     if (!result?.response) {
       throw new Error("No response received from API");
-    }
+    }   
     
     const responseText = typeof result.response.text === 'function'
       ? await result.response.text()
